@@ -1,0 +1,24 @@
+export const data = {
+    "maxValue": "200",
+    "paymentMethods": [
+        {
+            "code": "3",
+            "description": "(muy pronto)",
+            "name": "Cheque",
+            "status": 0
+        },
+        {
+            "code": "1",
+            "description": "(muy pronto)",
+            "name": "Cargo a cuenta",
+            "status": 0
+        },
+        {
+            "code": "2",
+            "description": "",
+            "name": "Efectivo",
+            "status": 1
+        }
+    ],
+    "exchangeRate": "3.366"
+}
