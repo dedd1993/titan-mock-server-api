@@ -2,7 +2,6 @@ import { Controller, Get, Res, HttpStatus, Query } from '@nestjs/common';
 import { Response } from 'express';
 
 import { BackendErrorCodes } from 'src/core/enums';
-import * as paymentData from './data/payment-method.data';
 
 @Controller('commons')
 export class CommonController {
@@ -19,8 +18,7 @@ export class CommonController {
 
   @Get('/payment-method')
   getPaymentMoethod(@Res() res: Response): any {
-    const response = paymentData.data;
-    // const response = require('./data/payment-method.mock');
+    const response = require('./data/payment-method-mock.json');
     res.status(HttpStatus.OK).send(response);
   }
 
