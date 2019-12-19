@@ -20,6 +20,7 @@ export class CommonController {
   @Get('/payment-method')
   getPaymentMoethod(@Res() res: Response): any {
     const response = paymentData.data;
+    // const response = require('./data/payment-method.mock');
     res.status(HttpStatus.OK).send(response);
   }
 
